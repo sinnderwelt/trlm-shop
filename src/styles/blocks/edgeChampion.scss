@@ -1,0 +1,248 @@
+.edgeChampion {
+    height: 579px;
+    padding-top: 40px;
+    background: #ccc;
+
+    .mainChampion {
+        display: flex;
+        flex-direction: column;
+        background: url(../assets/images/background.png);
+        height: 539px;
+        padding: 0 190px;
+
+        .championHeader {
+            position: relative;
+            display: flex;
+            flex: 1;
+
+            .championHeaderOil {
+                position: absolute;
+                z-index: 1;
+                background: url(../assets/images/oil.png);
+                background-repeat: no-repeat;
+                background-position: center top;
+                height: 464px;
+                width: 100%;
+            }
+
+            .championHeaderFilter {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex: 1;
+                z-index: 10;
+
+                img {
+                    height: 33px;
+                    width: 122px;
+                }
+
+                h2 {
+                    color:$white;
+                    width: 340px;
+                }
+
+                .championHeaderFilterBtn {
+                    a {
+                        position: relative;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $gray;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            border-width: 0 2px 2px 0;
+                            border-style: solid;
+                            border-color: $blue;
+                            padding: 5px;
+                            transform: rotate(315deg);
+                            top: 3px;
+                            right: -25px;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            border-width: 2px 0 0 0;
+                            border-style: solid;
+                            border-color: $blue;
+                            padding: 10px;
+                            top: 8px;
+                            right: -25px;
+                        }
+                    }
+                }
+            }
+
+            .championHeaderEnergy {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex: 1;
+                z-index: 10;
+
+                h1 {
+                    color: $white;
+                }
+            }
+
+            .championHeaderArrow {
+                display: flex;
+                position: absolute;
+                right: 0;
+
+                .championHeaderArrowLeft {
+                    height: 80px;
+                    width: 80px;
+                    background: rgba(255,255,255,0.2);
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border-width: 0 2px 2px 0;
+                        border-style: solid;
+                        color: #bbb;
+                        padding: 8px;
+                        border-radius: 2px;
+                        transform: rotate(135deg);
+                        top: 30px;
+                        left: 25px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border-width: 2px 0 0 0;
+                        border-style: solid;
+                        color: #bbb;
+                        padding: 15px;
+                        border-radius: 1px;
+                        top: 38px;
+                        left: 24px;
+                    }
+                }
+
+                
+                .championHeaderArrowRight {
+                    height: 80px;
+                    width: 80px;
+                    background: rgba(255,255,255,0.4);
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border-width: 0 2px 2px 0;
+                        border-style: solid;
+                        color: $white;
+                        padding: 8px;
+                        border-radius: 2px;
+                        transform: rotate(315deg);
+                        right: 25px;
+                        top: 30px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border-width: 2px 0 0 0;
+                        border-style: solid;
+                        color: $white;
+                        padding: 15px;
+                        border-radius: 1px;
+                        top: 38px;
+                        right: 24px;
+                    }
+                }
+            }
+        }
+        
+        .championList {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            z-index: 10;
+
+            .championCard {
+                display: flex;
+                flex: 1;
+                background: $white;
+                margin-right: 30px;
+                padding: 25px 15px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .championCardNumber{
+                    flex-basis: 55px;
+                    color: #bbb;
+                    font-size: 36px;
+                    font-weight: 800;
+                    margin-right: 7px;
+                }
+
+                .championCardContent{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    flex-grow: 1;
+                    
+                    h3 {
+                        color: $gray;
+                    }
+
+                    p {
+                        color: $gray;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+       
+                    .championCardContentTel {
+                        color: $gray;
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+
+                    .championCardContentBtn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 15px 20px;
+                        border: 2px solid $green;
+                        border-radius: 5px;
+
+                        svg {
+                            height: 30px;
+                            width: 30px;
+                            fill: $green;
+                            margin-right: 5px;
+                        }
+    
+                        a {
+                            color: $green;
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .championCardContentLinkBtn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px 20px;
+                        border: 2px solid $blue;
+                        border-radius: 5px;
+                        color: $blue;
+                        height: 65px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
