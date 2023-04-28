@@ -1,7 +1,7 @@
 .edgeChampion {
     height: 579px;
     padding-top: 40px;
-    background: #ccc;
+    background: $background;
 
     .mainChampion {
         display: flex;
@@ -163,6 +163,7 @@
             justify-content: space-between;
             flex: 1;
             z-index: 10;
+            margin-bottom: 25px;
 
             .championCard {
                 display: flex;
