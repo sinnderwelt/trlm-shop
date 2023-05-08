@@ -1,9 +1,9 @@
 // Для фиксации скрола нужно добавить overflow:hidden в body или html
+// Для появления на сайте должен быть display: flex
 
-
-.overlay {
+.overlayLogin {
     position: absolute;
-    display: flex;
+    display: none; 
     justify-content: center;
     align-items: center;
     top: 0;
@@ -16,7 +16,7 @@
 
     .modal {
         position: relative;
-        display: flex;
+        display: flex; //display: flex
         flex-direction: column;
         justify-content: space-around;
         height: 400px;
