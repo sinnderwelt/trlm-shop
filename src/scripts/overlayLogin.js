@@ -27,6 +27,14 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
+document.addEventListener('click', function(e){
+
+    if(e.target===overlayLogin) {
+        overlayLogin.style.display = 'none';
+        html.style.overflow = 'visible';
+    }
+});
+
 // wrapper.addEventListener('click', function() {
     
 //     // overlayLogin.style.display = 'none';
