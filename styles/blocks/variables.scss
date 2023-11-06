@@ -1,0 +1,39 @@
+$white: #fff;
+$gray: #222222;
+$footer: #777777;
+$blue: #1c69d4;
+$green: #3ca255;
+$search: #BBBBBB;
+$red: #FF4400;
+$background: #f0f0f0;
+
+$tablets: 768px;
+$phones: 480px;
+
+$z-point: 100;
+
+@mixin advantage-icon {
+    content: '';
+    display: block;
+    position: absolute;
+    max-width: 100%;
+  }
+
+  @mixin btn {
+    font-size: rem(18px);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: rem(16px) rem(36px);
+    border-radius: rem(100px);
+    background-color: $red;
+  }
+  @mixin description-icon {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: rem(41px);
+    width: rem(41px);
+    max-width: 100%;
+  }

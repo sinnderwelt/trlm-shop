@@ -1,0 +1,79 @@
+.edgeFooter {
+    background: $background;
+    height: 145px;
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 0 190px;
+        height: 100%;
+    
+        .footerNavigation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            li {
+                font-size: 15px;
+                margin-right: 25px;
+                // margin-bottom: 20px;
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        
+        .footerIcons {
+            display: flex;
+            justify-content: center;
+    
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 25px;
+                z-index: 0;
+                height: 30px;
+                width: 30px;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 30px;
+                    width: 30px;
+                    background: wheat;
+                    border-radius: 50%;
+                    z-index: 0;
+                }
+    
+    
+                svg {
+                    position: relative;
+                    height: 20px;
+                    width: 20px;
+                    z-index: 100;
+                }
+            }
+        }
+    
+        .footerDesign {
+            
+                p {
+                    color:$gray;
+                    font-size: 13px;
+                    font-weight: 400;
+    
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+        }
+    }
+}
